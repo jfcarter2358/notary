@@ -1,0 +1,37 @@
+/* background colors */
+.notary-charcoal,.notary-hover-charcoal:hover{color:#fff!important;background-color:#373F51!important}
+.notary-grey,.notary-hover-grey:hover{color:#000!important;background-color:#aaaaaa!important}
+.notary-white,.notary-hover-white:hover{color:#fff!important;background-color:#D8DBE2!important}
+.notary-light-purple,.notary-hover-light-purple:hover{color:#000!important;background-color:#8E82FE!important}
+.notary-blue,.notary-hover-blue:hover{color:#fff!important;background-color:#5E81AC!important}
+.notary-green,.notary-hover-green:hover{color:#fff!important;background-color:#A3BE8C!important}
+.notary-yellow,.notary-hover-yellow:hover{color:#000!important;background-color:#EBCB8B!important}
+.notary-orange,.notary-hover-orange:hover{color:#000!important;background-color:#D08770!important}
+.notary-red,.notary-hover-red:hover{color:#000!important;background-color:#BF616A!important}
+.notary-purple,.notary-hover-purple:hover{color:#000!important;background-color:#6C60DC!important}
+
+/* text colors */
+
+.notary-text-charcoal,.notary-hover-text-charcoal:hover{color:#373F51!important}
+.notary-text-grey,.notary-hover-text-grey:hover{color:#aaaaaa!important}
+.notary-text-white,.notary-hover-text-white:hover{color:#D8DBE2!important}
+.notary-text-light-purple,.notary-hover-text-light-purple:hover{color:#8E82FE!important}
+.notary-text-blue,.notary-hover-text-blue:hover{color:#5E81AC!important}
+.notary-text-green,.notary-hover-text-green:hover{color:#A3BE8C!important}
+.notary-text-yellow,.notary-hover-text-yellow:hover{color:#EBCB8B!important}
+.notary-text-orange,.notary-hover-text-orange:hover{color:#D08770!important}
+.notary-text-red,.notary-hover-text-red:hover{color:#BF616A!important}
+.notary-text-purple,.notary-hover-text-purple:hover{color:#6C60DC!important}
+
+
+/* border colors */
+.notary-border-charcoal,.notary-hover-border-charcoal:hover{border-color:#373F51!important}
+.notary-border-grey,.notary-hover-border-grey:hover{border-color:#aaaaaa!important}
+.notary-border-white,.notary-hover-border-white:hover{border-color:#D8DBE2!important}
+.notary-border-light-blue,.notary-hover-border-light-blue:hover{border-color:#88C0D0!important}
+.notary-border-blue,.notary-hover-border-blue:hover{border-color:#5E81AC!important}
+.notary-border-green,.notary-hover-border-green:hover{border-color:#A3BE8C!important}
+.notary-border-yellow,.notary-hover-border-yellow:hover{border-color:#EBCB8B!important}
+.notary-border-orange,.notary-hover-border-orange:hover{border-color:#D08770!important}
+.notary-border-red,.notary-hover-border-red:hover{border-color:#BF616A!important}
+.notary-border-purple,.notary-hover-border-purple:hover{border-color:#B48EAD!important}

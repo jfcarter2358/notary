@@ -1,0 +1,45 @@
+.variables:
+  platforms:
+    - linux/amd64
+    - linux/arm64
+    - linux/arm/v7
+  docker_org: jfcarter2358
+build-docker:
+  help: Build docker image of the Notary service
+  cmd: |
+    docker build -t notary -f src/Dockerfile .
+build-local:
+  help: Build local binary of the Notary service
+  cmd: |
+    stud clean
+    mkdir dist
+
+    cd src
+    env GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -o notary
+    cd ..
+    mkdir dist/notary
+    mv src/notary dist/notary
+    chmod +x dist/notary
+
+    print('Done!')
+clean:
+  help: Remove build and test artifacts
+  cmd: |
+    rm -r dist || true
+publish:
+  help: Publish release docker images to Docker Hub
+  cmd: |
+    platform_string = ','.join(platforms)
+    version = ?(cat VERSION).strip()
+
+    
+    print(f"Running build command: docker buildx build --platform {platform_string} -t {docker_org}/notary:{version} -f src/Dockerfile --push .")
+    docker buildx build --platform {platform_string} -t {docker_org}/notary:{version} -f src/Dockerfile --push .
+
+    print('Done!')
+run-docker:
+  help: Deploy local images of Notary via docker-compose
+  cmd: |
+    docker-compose down
+    docker-compose rm -f --remove-orphans
+    docker-compose up

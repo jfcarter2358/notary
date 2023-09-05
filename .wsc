@@ -1,0 +1,15 @@
+{
+    "log_level": "INFO",
+    "in": {
+        "css": "src/frontend/ui/css",
+        "html": "src/frontend/ui/html",
+        "img": "src/frontend/ui/img",
+        "js": "src/frontend/ui/js"
+    },
+    "out": {
+        "css": "src/frontend/ui-dist/static/css",
+        "html": "src/frontend/ui-dist/templates",
+        "img": "src/frontend/ui-dist/static/img",
+        "js": "src/frontend/ui-dist/static/js"
+    }
+}

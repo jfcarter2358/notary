@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <!--Use the `title` variable to set the title of the page-->
+    <title>Notary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!-- add the icon -->
+    <link rel="icon" href="/static/img/favicon.ico">
+    <!-- add w3 css -->
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- add jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- notary branding styles -->
+    <link rel="stylesheet" type="text/css" href="/static/css/notary.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/loading.css">
+    <script src="https://kit.fontawesome.com/caffed82f9.js" crossorigin="anonymous"></script>
+    <!-- add custom js -->
+    <script src="/static/js/delete.js"></script>
+
+  </head>
+  <body class="w3-light-grey">
+    <div id="main">
+      <!-- navigation bar -->
+      <div class="w3-container w3-padding-small notary-purple">
+        <div class="w3-right">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="w3-bar notary-purple w3-xlarge">
+        <!-- <a class="w3-bar-item w3-button" href="#"><i class="fa fa-bars"></i></a> -->
+        <span class="w3-bar-item">Notary</span>
+        <a class="w3-bar-item w3-button w3-right" href="/u/logout">Log Out</i></a>
+      </div>
+
+      <div class="w3-bar notary-purple">
+        <a href="/ui/index" class="w3-bar-item w3-button">Home</a>
+        <a href="/ui/create" class="w3-bar-item w3-button">Create User</a>
+        <a href="/ui/edit" class="w3-bar-item w3-button">Edit User</a>
+        <a href="/ui/delete" class="w3-bar-item w3-button notary-light-purple">Delete User</a>
+      </div>
+      <br>
+      <!-- /navigation bar -->
+
+      <div id="contents" class="w3-container">
+        <h1>Users</h1>
+
+        <!-- The Modal -->
+        <div id="modal" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="notary-red w3-header w3-container">
+              <h3>ATTENTION</h3>
+              <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            </div>
+            <div class="w3-container">
+              <br>
+              <p>Are you sure you want to delete this user?</p>
+              <br>
+              <div>
+                <button id="model_delete" class="w3-button notary-green" onclick="deleteUser(this)"><b>Confirm</b></button>
+                <button class="w3-button notary-red" onclick="document.getElementById('modal').style.display='none'"><b>Cancel</b></button>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <!-- user list -->
+        <div class="w3-card w3-white" id="user-card">
+          <br>
+          <div style="width: 80%; height:16px; position: relative; left: 10%;" class="loading w3-round"></div>
+          <br>
+          <div style="width: 80%; height:16px; position: relative; left: 10%;" class="loading w3-round"></div>
+          <br>
+          <div style="width: 80%; height:16px; position: relative; left: 10%;" class="loading w3-round"></div>
+          <br>
+        </div>
+        <!-- user list -->
+      </div>
+    </div>
+  <body>
+</html>
